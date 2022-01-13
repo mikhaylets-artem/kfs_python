@@ -1,32 +1,20 @@
-#a=[x for x in range(1,16)]
-#print(a)
-#b=[0 for x in range(12)]
-#print(b)
-#c=[x*7 for x in 'refredjerator']
-#print(c)
-#d=[x*7 for x in 'refredjerator']
-#print(d)
-#a=[1,2]
-#b=[1,2]
-#dict={i:j for i,j in zip(a,b)}
-#print(dict)
-#matrix**
-#n=3
-#m=6
-#a=[[2]*m for i in range(n)]
-#print(a)
-#print("-"*20)
-#for i in a:
-#    print(f"|{i}|")
-#print('-'*20)
-#import random
-#n=int(input())
-#m=int(input())
-#a=[[random.randint(0,9) for j in range(m)] for i in range(n)]
-#b=[a[i][j] for i in range(n) for j in range(m) if i==j]
-#print(a)
+import random
+#n=int(input('Введите количество строк: '))
+#m=int(input('Введите количество столбцов: '))
+#i=0
+#matrix=[[i]*m for q in range(n)]
+#for value in matrix:
+#    print(value)
 
-#print("-"*20)
-#for i in a:
-#    print(f"\t\t\t|{i}|")
-#print(b)
+#n=int(input('Введите количество строк: '))
+#m=int(input('Введите количество столбцов: '))
+#matrix=[[random.randint(0, 9) for w in range(m)] for q in range(n)]
+#print('Матрица --->')
+#for value in matrix:
+#    print(f'\t{value}')
+#d=[matrix[q][w] for q in range(n) for w in range(m) if q==w]
+#print(f'Главная диагональ: \n\t{d}')
+#second_string=[matrix[q][w] for q in range(n) for w in range(m) if q==1]
+#print(f'Вторая строка: \n\t{second_string}')
+#third_column=[matrix[q][w] for q in range(n) for w in range(m) if w==2]
+#print(f'Третий столбец: \n\t{third_column}')
